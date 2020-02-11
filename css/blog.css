@@ -1,0 +1,53 @@
+/* img{
+  float:left;
+  width: 30%;
+  margin: 1.66%;
+} */
+
+.img-box {
+  float: left;
+  position: relative;
+  width: 30%;
+  margin: 1.66%;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+
+}
+
+.img-box:hover {
+  opacity: .5;
+  transition: .5s ease;
+}
+
+.img-box:hover > .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: relative;
+  width: relative;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.text {
+  color: rgb(206, 116, 238);
+  font-family: Raleway, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
